@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather 26</title>
+    <script src="index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-fixed bg-no-repeat bg-cover ">
+    <div
+        class="bg-light-500/100 shadow-xl/30 backdrop-blur-xl p-8 rounded-lg shadow-lg max-w-md mx-auto mt-10 items-center text-white transition-discrete">
+        <h1 class="text-center m-3 p-3 text-xl text-3xl">Weather App</h1>
+        <input type="text" id="cityInput" class="border text-black border-gray-300 rounded px-4 py-2 justify-items-center"
+            placeholder="Enter city name">
+        <button id="search-btn"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Search</button>
+        <h1 id="weatherOutput" class="mt-4 p-5 text-center text-white text-4xl font-extrabold"></h1>
+        <div class="grid grid-cols-3 gap-4" id="otherData">
+            <div id="feelsLike" class="bg-white-500/100 shadow-xl/30 border-white p-2 m-2 rounded-lg text-center text-white"></div>
+            <div id="pressure" class="bg-white-500/100 shadow-xl/30 border-white p-2 m-2 rounded-lg text-center text-white"></div>
+            <div id="humidity" class="bg-white-500/100 shadow-xl/30 border-white p-2 m-2 rounded-lg text-center text-white"></div>
+            <div class="col-span-2 bg-white-500/100 shadow-xl/30 border-white p-2 m-2 rounded-lg text-center text-white" id="wind"></div>
+            <div id="visibility" class="bg-white-500/100 shadow-xl/30 border-white p-2 m-2 rounded-lg text-center text-white"></div>
+            <div id="clouds" class="bg-white-500/100 shadow-xl/30 border-white p-2 m-2 rounded-lg text-center text-white"></div>
+            <div class="col-span-2 bg-white-500/100 shadow-xl/30 border-white p-2 m-2 rounded-lg text-center text-white" id="description"></div>
+        </div>
+        <br>
+        <h6 id="date" class="text-center text-white"></h6>
+        <h6 id="time" class="text-center text-white"></h6>
+    </div>
+
+    <footer>
+        <p class="text-center text-white mt-10">Created by <a href="https://github.com/murali2601" target="_blank" class="text-blue-300 hover:underline mt-10">Murali Dharan</a></p>
+    </footer>
+</body>
+
+</html>
